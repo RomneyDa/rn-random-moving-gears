@@ -28,6 +28,8 @@ module.exports = function (api) {
             '^@screens/(.+)': './src/screens/\\1',
             '^@services/(.+)': './src/services/\\1',
             '^@utils/(.+)': './src/utils/\\1',
+            '^@hooks/(.+)': './src/hooks/\\1',
+            '^@types/(.+)': './src/types/\\1',
           },
         },
       ],
