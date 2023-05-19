@@ -4,7 +4,7 @@
 
 Everything you need to insert randomly generated responsive gears into your frontend!
 
-###This library includes:
+### This library includes:
 
 - Base types (see below)
 - Generation function examples - functions that output arrays of gears generated in various patterns
@@ -18,7 +18,7 @@ Everything you need to insert randomly generated responsive gears into your fron
   - Time loop hooks
 - A few example gear image sets
 
-###These repos are examples of this library in action:
+### These repos are examples of this library in action:
 
 - React, using React Animated:
 - React Native, using React Native Reanimated 2:
@@ -28,7 +28,7 @@ Everything you need to insert randomly generated responsive gears into your fron
 First things first, you need a set of gears to work with!
 Here are the requirements:
 
-- Gear images in PNG format
+- Gear images:
   - PNG format with transparent background
   - No extra space around the edges
   - One tooth at the top of the image, centered, pointing vertically
@@ -40,5 +40,6 @@ Here are the requirements:
   - Within an array, an object for each gear should specify:
     1. Gear name (OPTIONAL)
     2. Gear diameter
+    3. Filepath to gear image
 - Note, only one gear is fine!
 - TODO: expound on creating these sets and the folder/reference structure, and provide dimensional reference images
