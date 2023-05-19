@@ -31,7 +31,7 @@ Here are the requirements:
 - Gear images:
   - PNG format with transparent background
   - No extra space around the edges
-  - One tooth at the top of the image, centered, pointing vertically
+  - One tooth centered on the right side, pointing directly right. This convention is used to follow angle conventions, which have zero along the positive x axis
   - All gears in a set must have the same diametral pitch and tooth size
 - A JSON File with some specifications:
   - For the set, two constants must be specified:

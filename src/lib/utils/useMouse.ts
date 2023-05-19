@@ -1,7 +1,12 @@
 import { useEffect, useState } from 'react'
 
+interface MousePosition {
+  x: number
+  y: number
+}
+
 const useMouse = () => {
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
+  const [mousePos, setMousePos] = useState<MousePosition>({ x: 0, y: 0 })
 
   useEffect(() => {
     const handleMouseMove = (event) => {

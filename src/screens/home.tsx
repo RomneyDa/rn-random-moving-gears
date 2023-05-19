@@ -1,36 +1,21 @@
-import { StyleSheet, Text, View } from 'react-native'
-import { useSharedValue } from 'react-native-reanimated'
+import React from 'react'
+import { StyleSheet, View, Image } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
-import React, { useEffect, useState } from 'react'
-import useMouse from '@hooks/useMouse'
-import { AnimatedGear } from '@components/AnimatedGear'
-import { GearProps } from '@types/Gear'
-import gearGenerator from '../components/gearGenerator'
+import AnimatedGears from '../components/AnimatedGearGenerator'
+
+import mouseXAnimator from '../animators/useMouseX'
+import BasicBlackGearSet from '../lib/gear-sets/basic-black'
+import LinearDiagonalDown from '../lib/generators/linear-diagonal-down'
 
 const Home = () => {
-  // On load, generate 100 gears
-  const [gears, setGears] = useState<GearProps[]>()
-  useEffect(() => {
-    setGears(gearGenerator(100))
-  }, [])
-
-  // Animated value, updated with mouse position
-  const pos = useSharedValue(0)
-  const mouse = useMouse()
-  useEffect(() => {
-    pos.value = mouse.x
-  }, [mouse])
-
   return (
     <View style={styles.container}>
-      {gears && (
-        <View>
-          {gears.map((gear) => (
-            <AnimatedGear pos={pos} gear={gear} />
-          ))}
-        </View>
-      )}
-      <Text>{`Mouse position: ${mouse.x}, ${mouse.y}`}</Text>
+      <AnimatedGears
+        animator={mouseXAnimator}
+        gearSet={BasicBlackGearSet}
+        generator={LinearDiagonalDown}
+        numGears={10}
+      />
       <StatusBar style="auto" />
     </View>
   )
@@ -39,7 +24,7 @@ const Home = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#aaa',
     alignItems: 'center',
     justifyContent: 'center',
   },
