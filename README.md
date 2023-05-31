@@ -25,9 +25,8 @@ Everything you need to insert randomly generated responsive gears into your fron
 
 # Base types and architecture
 
-First things first, you need a set of gears to work with!
-Here are the requirements:
-
+First things first, you need a GearSet to work with!
+- Gear sets are arrays of 
 - Gear images:
   - PNG format with transparent background
   - No extra space around the edges

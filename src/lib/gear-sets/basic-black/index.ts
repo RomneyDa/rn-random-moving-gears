@@ -1,16 +1,17 @@
 import { GearSet } from '../../types/Gear'
+import SmallGearImage from './images/small-gear.png'
 
-const specs: GearSet = {
+const set: GearSet = {
   name: 'basic-black',
   diametricalPitch: 10,
   additionalToothLength: 10,
   gears: [
     {
       name: 'small',
-      imagePath: './images/small-gear.png',
-      diameter: 50,
+      imageSource: SmallGearImage,
+      diameter: 100,
     },
   ],
 }
 
-export default specs
+export default set

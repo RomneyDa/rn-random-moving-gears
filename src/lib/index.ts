@@ -1,8 +1,8 @@
 import { Gear, GearSet, GeneratedGear, GearGenerator } from './types/Gear'
 
 // Generators
-import LinearDiagonalDown from './generators/linear-diagonal-down'
-import LinearRight from './generators/linear-right'
+import LinearDiagonalDown from './gear-pattern-generators/linear-diagonal-down'
+import LinearRight from './gear-pattern-generators/linear-right'
 
 const lib = {
   Generators: {

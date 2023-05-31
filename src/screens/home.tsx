@@ -5,7 +5,7 @@ import AnimatedGears from '../components/AnimatedGearGenerator'
 
 import mouseXAnimator from '../animators/useMouseX'
 import BasicBlackGearSet from '../lib/gear-sets/basic-black'
-import LinearDiagonalDown from '../lib/generators/linear-diagonal-down'
+import LinearDiagonalDown from '../lib/gear-pattern-generators/linear-diagonal-down'
 
 const Home = () => {
   return (

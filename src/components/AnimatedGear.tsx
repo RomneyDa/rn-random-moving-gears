@@ -2,8 +2,7 @@ import Animated, {
   SharedValue,
   useAnimatedStyle,
 } from 'react-native-reanimated'
-import React, { useMemo } from 'react'
-import { Image } from 'react-native'
+import React from 'react'
 import { GeneratedGear } from '../lib/types/Gear'
 
 interface AnimatedGearProps {
@@ -12,9 +11,9 @@ interface AnimatedGearProps {
 }
 
 export const AnimatedGear = ({ generatedGear, pos }: AnimatedGearProps) => {
-  const { type, x, y, direction, angleOffset = 0, speed = 1 } = generatedGear
+  const { gear, x, y, direction, angleOffset = 0, speed = 1 } = generatedGear
   if (
-    type == undefined ||
+    gear == undefined ||
     x == undefined ||
     y == undefined ||
     direction == undefined
@@ -38,13 +37,13 @@ export const AnimatedGear = ({ generatedGear, pos }: AnimatedGearProps) => {
         {
           left: x,
           top: y,
-          width: type.diameter,
-          height: type.diameter,
+          width: gear.diameter,
+          height: gear.diameter,
           position: 'absolute',
         },
         animatedStyle,
       ]}
-      source={require('../lib/gear-sets/basic-black/images/small-gear.png')}
+      source={gear.imageSource}
       // source={{ uri: imageURI }}
     />
   )

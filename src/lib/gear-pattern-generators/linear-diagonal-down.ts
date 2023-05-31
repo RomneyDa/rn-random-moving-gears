@@ -8,7 +8,7 @@ const linearDiagonalDown: GearGenerator = (
   const ids = Array.from(Array(numGears).keys())
   const generatedGears: GeneratedGear[] = ids.map((id) => {
     return {
-      type: gearSet.gears[0],
+      gear: gearSet.gears[0],
       x: id * 25,
       y: id * 25,
       direction: id % 2 === 0 ? 1 : -1,

@@ -1,6 +1,6 @@
 export interface Gear {
   name: string
-  imagePath: any
+  imageSource: any
   diameter: number
 }
 
@@ -12,7 +12,7 @@ export interface GearSet {
 }
 
 export interface GeneratedGear {
-  type: Gear
+  gear: Gear
   x: number
   y: number
   angleOffset: number
