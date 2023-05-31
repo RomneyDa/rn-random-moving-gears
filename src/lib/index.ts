@@ -1,5 +1,3 @@
-import { Gear, GearSet, GeneratedGear, GearGenerator } from './types/Gear'
-
 // Generators
 import LinearDiagonalDown from './gear-pattern-generators/linear-diagonal-down'
 import LinearRight from './gear-pattern-generators/linear-right'
