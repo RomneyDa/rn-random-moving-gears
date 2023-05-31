@@ -5,7 +5,7 @@ import {
   GearGenerator,
   GearSet,
   GeneratedGear,
-} from '../lib/types/Gear'
+} from '@dromney/gear-pattern-generator/dist/types/Gear'
 import { AnimatedGear } from './AnimatedGear'
 import GearAnimator from '../animators/Animator'
 import { useEffect, useState } from 'react'

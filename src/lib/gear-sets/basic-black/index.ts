@@ -1,4 +1,4 @@
-import { GearSet } from '@dromney/gear-pattern-generator'
+import { GearSet } from '@dromney/gear-pattern-generator/dist/types/Gear'
 import SmallGearImage from './images/small-gear.png'
 
 const set: GearSet = {

@@ -3,7 +3,7 @@ import Animated, {
   useAnimatedStyle,
 } from 'react-native-reanimated'
 import React from 'react'
-import { GeneratedGear } from '../lib/types/Gear'
+import { GeneratedGear } from '@dromney/gear-pattern-generator/dist/types/Gear'
 
 interface AnimatedGearProps {
   generatedGear: GeneratedGear
